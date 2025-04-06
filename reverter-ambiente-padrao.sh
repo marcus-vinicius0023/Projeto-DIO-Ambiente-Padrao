@@ -1,13 +1,13 @@
 #!/bin/bash
 
-
+#Testa se o usuario e o root, caso não seja ira executar o comando sudo.
 if [ "$UID" -ne 0 ]; then
         echo "Permissões de administrador são requisitadas."
-        sudo -k "$0" "$@"
+        sudo "$0" "$@"
         exit
 fi
 
-
+#Caso o usuario sejá root - ou após a execução do sudo -, irá pedir uma confirmação, se de fato o usuário dejesa executar o script.
 if [ "$UID" = 0 ];then
 
         echo "O comando a seguir ira remover todas as adições feitas pelo código de ambiente padrão. Deseja prosseguir? S/N:"
