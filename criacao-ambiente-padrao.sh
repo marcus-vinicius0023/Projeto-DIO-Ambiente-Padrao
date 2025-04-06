@@ -15,6 +15,7 @@ mkdir /workspace/sec
 
 echo -e "\e[32mPastas de grupo criadas com sucesso!!\e[0m"
 
+
 #Criação dos grupos
 groupadd GRP_PUB
 groupadd GRP_ADM
@@ -22,6 +23,7 @@ groupadd GRP_VEN
 groupadd GRP_SEC
 
 echo -e "\e[32mGrupos criados com sucesso!!\e[0m"
+
 
 #Criação dos usuários
 useradd -s /bin/bash -c "Carlos Duarte" -m carlos #Criação do usuário, definindo o bash e criando a pasta home.
