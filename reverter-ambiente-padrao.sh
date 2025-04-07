@@ -36,27 +36,23 @@ userdel -r -f josefina
 userdel -r -f amanda
 userdel -r -f rogerio
 
-echo -e "\e[31mTodos usuários foram aniquilados!\e[0m"
+echo -e "\e[31mTodos usuários foram removidos!\e[0m"
 
 
 #Apaga a pasta workspace, junto com todos os diretórios contidos dentro dela
 rm -rfv /workspace
 
-echo -e "\e[31mPasta workspace obliterada, junto com tudo que havia dentro!\e[0m"
+echo -e "\e[31mPasta workspace foi apagada.\e[0m"
 
 
 #Remoção de todos os grupos
 groupdel -f GRP_PUB
-echo "Grupo pub, esmagado"
 groupdel -f GRP_ADM
-echo "Grupo amd. Acabou.."
 groupdel -f GRP_VEN
-echo "Grupo ven, já era"
 groupdel -f GRP_SEC
-echo "Grupo sec não respira mais"
 
 echo -e "\e[31mTodos os grupos foram destroçados!\e[0m"
 
 
 echo -e "\e[32mPrograma finalizado com sucesso!!\e[0m"
-echo -e "\e[32mTenha um bom dia!\e[0m"
+
